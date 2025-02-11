@@ -1,7 +1,7 @@
 # Overview [![Discord](https://img.shields.io/discord/1338638342493048844?label=Discord&logo=discord)](https://discord.gg/ewM37225Xx) [![Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Daxolotl-logic%26type%3Dpatrons)](https://www.patreon.com/axolotl-logic)
 
 $$
-\text{$Muse$ $\Rightarrow$ $Manifest$ $\Rightarrow$ $Maintain$}
+\text{$Muse$ $\wedge$ $Manifest$ $\wedge$ $Maintain$}
 $$
 
 A reference project for small to medium sized C applications. 
