@@ -6,7 +6,7 @@ $$
 
 This project is meant as a starter for small to medium sized C applications.
 
-In addition to a build system and bike shedding, it includes Static Site Generation (SSG), CI/CD, Unit Testing (via Criterion), and Fuzzing (via AFL++).
+In addition to a build system and bike shedding, it includes Static Site Generation (SSG), CI/CD, Unit Testing (via Criterion + CTest), and Fuzzing (via AFL++).
 
 It is designed to be modular and opinionated with maximimum observability.
 
