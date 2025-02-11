@@ -4,15 +4,22 @@ $$
 \text{$Muse$ $\Rightarrow$ $Manifest$ $\Rightarrow$ $Maintain$}
 $$
 
-This project is meant as a starter for small to medium sized C applications.
+A reference project for small to medium sized C applications. 
 
 In addition to a build system and bike shedding, it includes Static Site Generation (SSG), CI/CD, Unit Testing (via Criterion + CTest), and Fuzzing (via AFL++).
 
 It is designed to be modular and opinionated with maximimum observability.
 
+# Quickstart
+
+This repository is meant to be copied then edited by me or others. 
+
+Search the code base for "axolotl" and drop in your own code there!
+
 # See Also
 
-[Full Documentation](https://c-starter.axolotl-logic.io/)
+[More Documentation](https://c-starter.axolotl-logic.io/)
+
 [Organization's Site](https://axolotl-logic.io/)
 
 
