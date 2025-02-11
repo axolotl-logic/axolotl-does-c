@@ -12,7 +12,9 @@ It is designed to be modular and opinionated with maximimum observability.
 
 # See Also
 
-[My Website](https://axolotl-logic.io/)
+[Full Documentation](https://c-starter.axolotl-logic.io/)
+[Organization's Site](https://axolotl-logic.io/)
+
 
 # Support
 
