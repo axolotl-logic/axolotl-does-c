@@ -1,0 +1,4 @@
+site_dir: site/reports
+site_name: Axolotl Program Analysis
+theme:
+  name: terminal
