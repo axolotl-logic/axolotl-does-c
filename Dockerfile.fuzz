@@ -23,4 +23,4 @@ ADD ./cmake cmake
 RUN cmake -DCMAKE_C_COMPILER=afl-cc -S . -B build
 RUN cmake --build build --target axolotl-fuzz
 
-CMD afl-fuzz -i fuzz/cases/ -o /app/afl-states build/axolotl-fuzz
+CMD afl-fuzz -S 5 -i fuzz/cases/ -o /app/afl-states build/axolotl-fuzz

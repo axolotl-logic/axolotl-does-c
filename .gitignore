@@ -8,6 +8,7 @@ analysis/
 
 # Used by contributors
 .vimspector.json
+.gdb_history
 
 # Created by https://www.toptal.com/developers/gitignore/api/cmake,gcov,c,vim,emacs,linux,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=cmake,gcov,c,vim,emacs,linux,macos,windows

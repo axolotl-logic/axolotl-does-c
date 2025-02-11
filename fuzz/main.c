@@ -6,23 +6,41 @@
 #include "common/tsv.h"
 
 #define BUFFER_SIZE 256
-#define MAX_VALUES 256
+#define ROW_REALLOC_SIZE 256
 
-int main(void) {
-  char *values[MAX_VALUES] = {0};
-  size_t n = 0;
-  for (size_t n = 0; n < MAX_VALUES; n++) {
-    values[n] = calloc(0, BUFFER_SIZE);
-    if (fscanf(stdin, "%256[^\t]", values[n]) != EOF) {
-      break;
-    }
-  }
+int main(void)
+{
+	char **values = (char **)malloc(sizeof(*values) * ROW_REALLOC_SIZE);
 
-  tsv_fprint(stdout, n, values);
+	size_t values_len = 0;
+	// Run until EOF, memory runs out, or heat death of universe
+	while (true) {
+		char **new_values = (char **)realloc(
+			(void *)values,
+			(sizeof(*values) * values_len) +
+				(ROW_REALLOC_SIZE * sizeof(*values)));
+		assert(new_values && "Out of memory");
+		values = new_values;
 
-  for (size_t i = 0; i < n; i++) {
-    free(values[i]);
-  }
+		char *buffer = calloc(0, BUFFER_SIZE);
+		if (values == NULL) {
+			values = &buffer;
+		} else {
+			values[values_len] = buffer;
+		}
 
-  return 0;
+		if (scanf("%256[^\t]", values[values_len]) <= 0) {
+			break;
+		}
+
+		values_len++;
+	}
+
+	tsv_fprint(stdout, values_len, (const char **)values);
+
+	for (size_t i = 0; i < values_len; i++) {
+		free(values[i]);
+	}
+
+	return 0;
 }
