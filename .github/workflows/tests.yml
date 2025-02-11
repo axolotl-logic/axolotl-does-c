@@ -1,4 +1,4 @@
-name: Cross platform compilation
+name: Unit Tests
 
 on:
   push:
