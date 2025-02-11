@@ -4,7 +4,7 @@ $$
 \text{$Muse$ $\Rightarrow$ $Manifest$ $\Rightarrow$ $Maintain$}
 $$
 
-This project is meant as a starter for small to medium sized C application
+This project is meant as a starter for small to medium sized C applications.
 
 In addition to a build system and bike shedding, it includes Static Site Generation (SSG), CI/CD, Unit Testing (via Criterion), and Fuzzing (via AFL++).
 
