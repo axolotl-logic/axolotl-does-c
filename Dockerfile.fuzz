@@ -14,7 +14,13 @@ RUN apt-get update && apt-get install -y \
         libcriterion3
 
 # Copy only what is needed
-ADD ./src ./CMakeLists.txt ./fuzz ./tests ./cmake /app/ 
+ADD ./src src
+ADD ./CMakeLists.txt .
+ADD ./fuzz fuzz
+ADD ./tests tests
+ADD ./cmake cmake
 
 RUN cmake -DCMAKE_C_COMPILER=afl-cc -S . -B build
 RUN cmake --build build --target axolotl-fuzz
+
+CMD afl-fuzz -i fuzz/cases/ -o /app/afl-states build/axolotl-fuzz
