@@ -10,6 +10,10 @@ In addition to a build system and bike shedding, it includes Static Site Generat
 
 It is designed to be modular and opinionated with maximimum observability.
 
+$$
+\text{This project is a \textcolor{orange}{work in progress}.}
+$$
+
 # Quickstart
 
 This repository is meant to be copied then edited by me or others. 
