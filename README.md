@@ -1,4 +1,6 @@
-# Overview [![Discord](https://img.shields.io/discord/1338638342493048844?label=Discord&logo=discord)](https://discord.gg/ewM37225Xx) [![Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Daxolotl-logic%26type%3Dpatrons)](https://www.patreon.com/axolotl-logic) [![CI/CD](https://github.com/axolotl-logic/c-starter/actions/workflows/tests.yml/badge.svg)](https://github.com/axolotl-logic/c-starter/actions/workflows/tests.yml)
+# Overview [![CI/CD](https://github.com/axolotl-logic/c-starter/actions/workflows/tests.yml/badge.svg)](https://github.com/axolotl-logic/c-starter/actions/workflows/tests.yml)
+[![Discord](https://img.shields.io/discord/1338638342493048844?label=Discord&logo=discord)](https://discord.gg/ewM37225Xx) [![Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Daxolotl-logic%26type%3Dpatrons)](https://www.patreon.com/axolotl-logic) [![Liberapay patrons](https://img.shields.io/liberapay/patrons/axolotl-logic)](https://en.liberapay.com/Axolotl-Logic)
+
 
 $$
 \text{$Logic_{Axolotl}$ $\Rightarrow$ $Muse$ $\wedge$ $Manifest$ $\wedge$ $Maintain$}
