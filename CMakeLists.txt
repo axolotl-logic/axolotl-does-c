@@ -38,12 +38,12 @@ add_executable(axolotl-test tests/common/test_tsv.c)
 include_directories(axolotl-test src)
 target_link_libraries(axolotl-test axolotl-common ${CRITERION_LIBRARY})
 
+enable_testing()
+add_test(NAME axolotl-test COMMAND axolotl-test)
+
 #
 # Custom Commands and Targets
 #
-
-# Run tests
-add_custom_target(test ${CMAKE_BINARY_DIR}/axolotl-test)
 
 # Build human written documentation
 add_custom_target(docs mkdocs build -f "${CMAKE_SOURCE_DIR}/mkdocs.docs.yml")
